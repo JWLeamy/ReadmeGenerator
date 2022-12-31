@@ -1,2 +1,1 @@
 # ReadmeGenerator
-s
