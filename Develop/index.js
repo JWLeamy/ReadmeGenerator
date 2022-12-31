@@ -4,6 +4,31 @@ const fs = require('fs')
 // TODO: Create an array of questions for user input
 const questions = ["What is your github username?", "What is your email adress?", "What is your project's name?", "Please write a short description of your project.", "What kind of liscense should your project have?", "What command should be run to install dependencies", "What command should be run to run tests?", "What does the user need to know about using the repo?", "What does the user need to know about contributing to the repo?"];
 
+const generateREADME = ({Github, Email, ProjectName, Description, Liscense, Dependencies, Tests, UserInfo, UserContributions}) =>
+`# ${ProjectName}
+${Liscense}
+
+## Description
+
+${Description}
+
+## Table of Contents
+
+## Installation
+
+${Dependencies}
+
+## Usage
+
+${UserInfo}
+
+## Tests
+
+${Tests}
+
+`
+
+
 function answer() {
     return [{
         type: 'input',
@@ -53,13 +78,6 @@ function answer() {
     }];
 }
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-    fs.writeFile(fileName, JSON.stringify(data), function (err) {
-        console.log(err)
-    })
-}
-
 // TODO: Create a function to initialize app
 function init() {}
 
@@ -69,6 +87,6 @@ init();
 
 // Not sure of the above instreuction, but this is how I would approach the problem.
 inquirer.prompt(answer()).then(answers => {
-    fs.writeToFile("./ReadmeGenerator/README.md", answers)
-    })
-
+    fs.writeFile("./README.md", JSON.stringify(answers), function (err) {
+        console.log(err)
+    })})

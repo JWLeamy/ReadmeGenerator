@@ -1,1 +1,0 @@
-{"Github":"JWLeamy","Email":"jwleamy@gmail.com","ProjectName":"ReadmeGenerator","Description":"A applicatation that generates a readme file!","Liscense":"Idk","Dependencies":"Idk","Tests":"Idk","UserInfo":"A lot","UserContributions":"A lot"}
