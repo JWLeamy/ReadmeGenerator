@@ -54,7 +54,11 @@ function answer() {
 }
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, JSON.stringify(data), function (err) {
+        console.log(err)
+    })
+}
 
 // TODO: Create a function to initialize app
 function init() {}
@@ -65,7 +69,6 @@ init();
 
 // Not sure of the above instreuction, but this is how I would approach the problem.
 inquirer.prompt(answer()).then(answers => {
-    fs.writeFile("./ReadmeGenerator/README.md", JSON.stringify(answers), function (err) {
-        console.log(err)
+    fs.writeToFile("./ReadmeGenerator/README.md", answers)
     })
-})
+
