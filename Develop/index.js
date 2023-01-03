@@ -99,10 +99,3 @@ function init() {}
 
 // Function call to initialize app
 init();
-
-
-// Not sure of the above instreuction, but this is how I would approach the problem.
-/*inquirer.prompt(answer()).then(answers => {
-    fs.writeFile("./README.md", JSON.stringify(answers), function (err) {
-        console.log(err)
-    })})*/
