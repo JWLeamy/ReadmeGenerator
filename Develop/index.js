@@ -4,15 +4,23 @@ const fs = require('fs')
 // TODO: Create an array of questions for user input
 const questions = ["What is your github username?", "What is your email adress?", "What is your project's name?", "Please write a short description of your project.", "What kind of liscense should your project have?", "What command should be run to install dependencies", "What command should be run to run tests?", "What does the user need to know about using the repo?", "What does the user need to know about contributing to the repo?"];
 
-const generateREADME = ({Github, Email, ProjectName, Description, Liscense, Dependencies, Tests, UserInfo, UserContributions}) =>
+const generateREADME = ({Github, Email, ProjectName, Description, License, Dependencies, Tests, UserInfo, UserContributions}) =>
 `# ${ProjectName}
-${Liscense}
+
+![badge](https://img.shields.io/badge/license-${License}-brightgreen)<br />
 
 ## Description
 
-${Description}
+🔍 ${Description}
 
 ## Table of Contents
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
 
 ## Installation
 
@@ -21,6 +29,12 @@ ${Dependencies}
 ## Usage
 
 ${UserInfo}
+
+## License
+
+![badge](https://img.shields.io/badge/license-${License}-brightgreen)
+
+This application is covered by the ${License} license. 
 
 ## Tests
 
@@ -32,9 +46,8 @@ ${UserContributions}
 
 ## Questions
 
-If you have any questions regarding the project, open an issue or contact me directly at ${Email}. Please Checkout my other projects at ${Github}!
+If you have any questions regarding the project, open an issue or contact me directly at ${Email}. Please Checkout my other projects at ${Github} on Github!
 `
-
 
 inquirer
   .prompt([
@@ -60,7 +73,7 @@ inquirer
             default: 'Description'
         }, {
             type: 'list',
-            name: 'Liscense',
+            name: 'License',
             message: `${questions[4]}`,
             choices: ['MIT', "APACHE 2.0", "GPL 3.0", "BSD 3", "None"]
         }, {
@@ -94,8 +107,3 @@ inquirer
       }
     );
 
-// TODO: Create a function to initialize app
-function init() {}
-
-// Function call to initialize app
-init();
