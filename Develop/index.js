@@ -7,7 +7,7 @@ const questions = ["What is your github username?", "What is your email adress?"
 const generateREADME = ({Github, Email, ProjectName, Description, License, Dependencies, Tests, UserInfo, UserContributions}) =>
 `# ${ProjectName}
 
-![badge](https://img.shields.io/badge/license-${License}-brightgreen)<br />
+![badge](https://img.shields.io/badge/license-${License}-brightgreen)
 
 ## Description
 
@@ -46,7 +46,7 @@ ${UserContributions}
 
 ## Questions
 
-If you have any questions regarding the project, open an issue or contact me directly at ${Email}. Please Checkout my other projects at ${Github} on Github!
+If you have any questions regarding the project, open an issue or contact me directly at ${Email}. Please Checkout my other projects at [${Github}](https://github.com/${Github})!
 `
 
 inquirer
@@ -75,7 +75,7 @@ inquirer
             type: 'list',
             name: 'License',
             message: `${questions[4]}`,
-            choices: ['MIT', "APACHE 2.0", "GPL 3.0", "BSD 3", "None"]
+            choices: ['MIT', "APACHE_2.0", "GPL_3.0", "BSD_3", "None"]
         }, {
             type: 'input',
             name: 'Dependencies',
