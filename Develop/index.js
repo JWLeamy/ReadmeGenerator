@@ -11,7 +11,7 @@ const generateREADME = ({Github, Email, ProjectName, Description, License, Depen
 
 ## Description
 
-🔍 ${Description}
+${Description}
 
 ## Table of Contents
 - [Description](#description)
