@@ -2,9 +2,8 @@
 
 A downloadable README generator that creates a well formatted readme file in just a few seconds. This app will run in in your local browser, using only javascript and basic readme formatting.
 
+[Readme User Example](https://user-images.githubusercontent.com/111401066/210478392-c326a929-699d-4ba6-b703-b2b801313f65.webm)
 
-
-https://user-images.githubusercontent.com/111401066/210478141-4e2b6bd1-5cc9-4107-9ce8-0cbdbb51de0a.mp4
 
 
 
