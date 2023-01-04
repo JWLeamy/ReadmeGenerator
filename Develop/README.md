@@ -1,10 +1,10 @@
-# Project #1
+# Project-1
 
-![badge](https://img.shields.io/badge/license-APACHE_2.0-brightgreen)
+![badge](https://img.shields.io/badge/license-MIT-brightgreen)
 
 ## Description
 
-The greatest project ever
+The best p[roject ever
 
 ## Table of Contents
 - [Description](#description)
@@ -21,13 +21,13 @@ Anything
 
 ## Usage
 
-Everything
+Anything
 
 ## License
 
-![badge](https://img.shields.io/badge/license-APACHE_2.0-brightgreen)
+![badge](https://img.shields.io/badge/license-MIT-brightgreen)
 
-This application is covered by the APACHE_2.0 license. 
+This application is covered by the MIT license. 
 
 ## Tests
 
@@ -35,8 +35,8 @@ Anything
 
 ## Contributions
 
-Everything
+Anything
 
 ## Questions
 
-If you have any questions regarding the project, open an issue or contact me directly at jwleamy@gmail.com. Please Checkout my other projects at [JWLeamy ](https://github.com/JWLeamy )!
+If you have any questions regarding the project, open an issue or contact me directly at jwleamy@gmail.com. Please Checkout my other projects at [JWLeaqmy](https://github.com/JWLeaqmy)!
